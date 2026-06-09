@@ -2,7 +2,7 @@
 
 Passkey-powered, gasless Solana transactions — no wallet, no seed phrase, just biometrics.
 
-🔗 **Live:** Coming soon &nbsp;|&nbsp; 👤 **Author:** [Priyanshu Bharti](https://github.com/Priyanshubhartistm)
+🔗 **Live:** [Coming soon](https://zero-wallet-eight.vercel.app/)  &nbsp;|&nbsp; 👤 **Author:** [Priyanshu Bharti](https://github.com/Priyanshubhartistm)
 
 ---
 
