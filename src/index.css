@@ -167,39 +167,6 @@
     box-shadow: var(--glow-accent);
   }
 
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .animate-pulse-slow {
-    animation: pulse 4s ease-in-out infinite;
-  }
-
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
-  }
-}
-
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 20px hsl(187 94% 43% / 0.2);
-  }
-
-  to {
-    box-shadow: 0 0 40px hsl(187 94% 43% / 0.4);
-  }
 }
 
 /* Scrollbar styling */

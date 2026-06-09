@@ -27,7 +27,7 @@ export function StatusBadge({ status, children, className }: StatusBadgeProps) {
         className={cn('w-1.5 h-1.5 rounded-full', {
           'bg-success': status === 'success',
           'bg-destructive': status === 'error',
-          'bg-warning animate-pulse': status === 'pending',
+          'bg-warning': status === 'pending',
           'bg-primary': status === 'info',
         })}
       />

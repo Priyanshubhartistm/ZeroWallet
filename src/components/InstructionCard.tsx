@@ -14,7 +14,7 @@ export function InstructionCard({ instruction, index }: InstructionCardProps) {
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="glass rounded-xl overflow-hidden animate-fade-in" style={{ animationDelay: `${index * 100}ms` }}>
+    <div className="glass rounded-xl overflow-hidden">
       {/* Header */}
       <button
         onClick={() => setIsExpanded(!isExpanded)}

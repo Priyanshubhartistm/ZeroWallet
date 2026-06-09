@@ -208,7 +208,7 @@ export function SendSol() {
             {/* Left: Action Demo */}
             <div className="space-y-6">
               {/* Wallet Card */}
-              <div className="glass rounded-2xl p-6 animate-fade-in">
+              <div className="glass rounded-2xl p-6">
                 <h3 className="text-sm font-medium text-muted-foreground mb-4">Demo: Send SOL</h3>
 
                 {/* Post */}
@@ -285,7 +285,7 @@ export function SendSol() {
 
                 {/* Status */}
                 {txCompleted && (
-                  <div className="flex items-center gap-2 text-success text-sm animate-fade-in">
+                  <div className="flex items-center gap-2 text-success text-sm">
                     <CheckCircle2 className="w-4 h-4" />
                     Transaction recorded on-chain! You paid 0 Fees.
                   </div>
@@ -308,10 +308,10 @@ export function SendSol() {
             </div>
 
             {/* Right: Debug Panel */}
-            <div className="animate-slide-in-right space-y-6" style={{ animationDelay: '200ms' }}>
+            <div className="space-y-6">
               <h3 className="text-lg font-semibold text-foreground">Transaction Details</h3>
               <DebugPanel result={txResult} isLoading={isProcessing} />
-              <div className="w-full animate-slide-in-right space-y-6">
+              <div className="w-full space-y-6">
                 <div className='glass rounded-2xl transition-all duration-300 hover:border-primary/30'>
                   <CodeBlock
                     language="jsx"

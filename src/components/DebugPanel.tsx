@@ -14,7 +14,7 @@ export function DebugPanel({ result, isLoading }: DebugPanelProps) {
   if (isLoading) {
     return (
       <div className="glass rounded-2xl p-8 flex flex-col items-center justify-center min-h-[400px]">
-        <div className="w-12 h-12 border-2 border-primary border-t-transparent rounded-full animate-spin mb-4" />
+        <div className="w-12 h-12 border-2 border-primary border-t-transparent rounded-full mb-4" />
         <p className="text-muted-foreground">Processing transaction...</p>
       </div>
     );
@@ -35,7 +35,7 @@ export function DebugPanel({ result, isLoading }: DebugPanelProps) {
   }
 
   return (
-    <div className="space-y-6 animate-fade-in">
+    <div className="space-y-6">
       {/* Transaction Status */}
       <div className="glass rounded-2xl p-6">
         <div className="flex items-center justify-between mb-4">

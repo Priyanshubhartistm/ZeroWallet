@@ -29,7 +29,7 @@ export default function Login() {
             <div className="order-1 lg:order-1">
               <div className="glass rounded-3xl p-8 md:p-12 text-center max-w-md mx-auto">
                 {/* Icon */}
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mx-auto mb-8 shadow-lg shadow-primary/30 animate-float">
+                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary to-accent flex items-center justify-center mx-auto mb-8 shadow-lg shadow-primary/30">
                   <Fingerprint className="w-10 h-10 text-primary-foreground" />
                 </div>
 
@@ -55,7 +55,7 @@ export default function Login() {
                 >
                   {wallet.isConnecting ? (
                     <>
-                      <Loader2 className="w-5 h-5 animate-spin" />
+                      <Loader2 className="w-5 h-5" />
                       Creating your wallet...
                     </>
                   ) : (
@@ -69,7 +69,7 @@ export default function Login() {
 
                 {/* Loading State Info */}
                 {wallet.isConnecting && (
-                  <div className="mt-6 p-4 rounded-xl bg-secondary/50 animate-fade-in">
+                  <div className="mt-6 p-4 rounded-xl bg-secondary/50">
                     <p className="text-sm text-muted-foreground">
                       Creating or restoring your smart wallet on Solana Devnet...
                     </p>

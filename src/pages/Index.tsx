@@ -29,21 +29,22 @@ export default function Index() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
+      <section className="relative overflow-hidden min-h-[85vh] flex items-center">
+
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.15),transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(var(--primary)/0.15),transparent_50%)] z-[1]" />
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
 
-        <div className="container mx-auto px-4 py-24 md:py-32 relative">
+        <div className="container mx-auto px-4 py-24 md:py-32 relative z-[2]">
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8">
               <Sparkles className="w-4 h-4 text-primary" />
               <span className="text-sm font-medium text-muted-foreground">Developer Playground</span>
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight animate-fade-in" style={{ animationDelay: '100ms' }}>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Build Solana Apps{' '}
               <span className="text-gradient-primary">Without Wallets</span>,{' '}
               <br className="hidden md:block" />
@@ -51,13 +52,13 @@ export default function Index() {
             </h1>
 
             {/* Subtitle */}
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '200ms' }}>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
               ZeroWallet enables seedless, gasless Solana applications using passkeys.
               This playground demonstrates how it all works under the hood.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in" style={{ animationDelay: '300ms' }}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/login">
                 <Button variant="hero" size="xl">
                   <Fingerprint className="w-5 h-5" />
@@ -92,8 +93,7 @@ export default function Index() {
             {features.map((feature, index) => (
               <div
                 key={feature.title}
-                className="glass rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 group animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="glass rounded-2xl p-6 hover:border-primary/30 transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 group-hover:bg-primary/30 transition-colors">
                   <feature.icon className="w-6 h-6 text-primary" />

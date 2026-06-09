@@ -118,7 +118,7 @@ export default defineConfig({
             {/* Main Info Cards */}
             <div className="lg:col-span-2 space-y-6">
               {/* Smart Wallet Card */}
-              <div className="glass rounded-2xl p-6 animate-fade-in">
+              <div className="glass rounded-2xl p-6">
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-lg font-semibold text-foreground">Smart Wallet</h2>
                   <StatusBadge status="success">Connected</StatusBadge>
@@ -174,7 +174,7 @@ export default defineConfig({
               </div>
 
               {/* What Happened Card */}
-              <div className="glass rounded-2xl p-6 border-l-4 border-l-primary animate-fade-in" style={{ animationDelay: '100ms' }}>
+              <div className="glass rounded-2xl p-6 border-l-4 border-l-primary">
                 <h3 className="font-semibold text-foreground mb-4 flex items-center gap-2">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                   What Just Happened?
@@ -222,7 +222,7 @@ export default defineConfig({
               </div>
 
               {/* Next Steps */}
-              <div className="glass rounded-2xl p-6 animate-fade-in" style={{ animationDelay: '200ms' }}>
+              <div className="glass rounded-2xl p-6">
                 <h3 className="font-semibold text-foreground mb-4">What's Next?</h3>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <Link to="/actions" className="block">

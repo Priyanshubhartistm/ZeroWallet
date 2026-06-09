@@ -104,7 +104,7 @@ export default function SimulateFailure() {
           <div className="grid lg:grid-cols-2 gap-8">
             {/* Left: Scenario Selection */}
             <div className="space-y-6">
-              <div className="glass rounded-2xl p-6 animate-fade-in">
+              <div className="glass rounded-2xl p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Choose a Failure Scenario</h3>
 
                 <div className="space-y-3">
@@ -162,10 +162,10 @@ export default function SimulateFailure() {
             </div>
 
             {/* Right: Error Analysis */}
-            <div className="animate-slide-in-right" style={{ animationDelay: '200ms' }}>
+            <div>
               {isProcessing ? (
                 <div className="glass rounded-2xl p-8 flex flex-col items-center justify-center min-h-[400px]">
-                  <div className="w-12 h-12 border-2 border-destructive border-t-transparent rounded-full animate-spin mb-4" />
+                  <div className="w-12 h-12 border-2 border-destructive border-t-transparent rounded-full mb-4" />
                   <p className="text-muted-foreground">Simulating failure...</p>
                 </div>
               ) : txResult && errorInfo ? (

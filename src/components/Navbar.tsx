@@ -92,7 +92,7 @@ export function Navbar() {
             {wallet.isConnected ? (
               <>
                 <div className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-lg bg-secondary/50">
-                  <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-success" />
                   <span className="text-xs font-mono text-muted-foreground">
                     {wallet.wallet.smartWallet?.slice(0, 4)}...{wallet.wallet.smartWallet?.slice(-4)}
                   </span>
